@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCA8CB"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Character illustration"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="#F187B9"
+            android:text="이전그림" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:backgroundTint="#F187B9"
+            android:text="다음그림" />
+
+    </LinearLayout>
+
+    <com.cookandroid.project4_2.PictureView
+        android:id="@+id/PictureView"
+        android:layout_width="wrap_content"
+        android:layout_height="357dp"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:layout_width="247dp"
+        android:layout_height="141dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/ChkAgree"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Do you want to contact?" />
+
+        <TextView
+            android:id="@+id/Text1"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="youri728@gmail.com"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/Text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram ID: @Youri_T_"
+            android:textSize="15dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="139dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="youtube :"
+                android:textSize="15dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bntJoin"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:backgroundTint="#F187B9"
+                android:text="join!"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
